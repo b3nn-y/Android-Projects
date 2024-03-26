@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/homeScreenFragment">
+
+    <fragment
+        android:id="@+id/homeScreenFragment"
+        android:name="com.bennysamuel.zinder.Fragments.HomeScreenFragment"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_homeScreenFragment_to_matchOneFragment"
+            app:destination="@id/matchOneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/matchOneFragment"
+        android:name="com.bennysamuel.zinder.Fragments.MatchOneFragment"
+        android:label="fragment_match_one"
+        tools:layout="@layout/fragment_match_one" >
+        <action
+            android:id="@+id/action_matchOneFragment_to_matchTwoFragment"
+            app:destination="@id/matchTwoFragment" />
+        <action
+            android:id="@+id/action_matchOneFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/matchTwoFragment"
+        android:name="com.bennysamuel.zinder.Fragments.MatchTwoFragment"
+        android:label="fragment_match_two"
+        tools:layout="@layout/fragment_match_two" >
+        <action
+            android:id="@+id/action_matchTwoFragment_to_matchThreeFragment"
+            app:destination="@id/matchThreeFragment" />
+        <action
+            android:id="@+id/action_matchTwoFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/matchThreeFragment"
+        android:name="com.bennysamuel.zinder.Fragments.MatchThreeFragment"
+        android:label="fragment_match_three"
+        tools:layout="@layout/fragment_match_three" >
+        <action
+            android:id="@+id/action_matchThreeFragment_to_matchFourFragment"
+            app:destination="@id/matchFourFragment" />
+        <action
+            android:id="@+id/action_matchThreeFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/matchFourFragment"
+        android:name="com.bennysamuel.zinder.Fragments.MatchFourFragment"
+        android:label="fragment_match_four"
+        tools:layout="@layout/fragment_match_four" >
+        <action
+            android:id="@+id/action_matchFourFragment_to_matchFiveFragment"
+            app:destination="@id/matchFiveFragment" />
+        <action
+            android:id="@+id/action_matchFourFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/matchFiveFragment"
+        android:name="com.bennysamuel.zinder.Fragments.MatchFiveFragment"
+        android:label="fragment_match_five"
+        tools:layout="@layout/fragment_match_five" >
+        <action
+            android:id="@+id/action_matchFiveFragment_to_matchOneFragment"
+            app:destination="@id/matchOneFragment" />
+        <action
+            android:id="@+id/action_matchFiveFragment_to_finalFragment"
+            app:destination="@id/finalFragment" />
+        <action
+            android:id="@+id/action_matchFiveFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalFragment"
+        android:name="com.bennysamuel.zinder.Fragments.FinalFragment"
+        android:label="fragment_final"
+        tools:layout="@layout/fragment_final" >
+        <action
+            android:id="@+id/action_finalFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+    </fragment>
+</navigation>

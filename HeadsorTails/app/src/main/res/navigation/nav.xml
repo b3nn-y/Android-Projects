@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/toss">
+
+    <fragment
+        android:id="@+id/toss"
+        android:name="com.bennysamuel.headsortails.TossFragment"
+        android:label="fragment_toss"
+        tools:layout="@layout/fragment_toss" >
+        <action
+            android:id="@+id/from_toss_fragment_to_result_fragment"
+            app:destination="@id/tossResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tossResultFragment"
+        android:name="com.bennysamuel.headsortails.TossResultFragment"
+        android:label="fragment_toss_result"
+        tools:layout="@layout/fragment_toss_result" >
+        <action
+            android:id="@+id/fron_result_fragment_to_toss_fragment"
+            app:destination="@id/toss" />
+    </fragment>
+</navigation>

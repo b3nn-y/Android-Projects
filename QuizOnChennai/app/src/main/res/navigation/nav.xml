@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/homeScreenFragment">
+
+    <fragment
+        android:id="@+id/homeScreenFragment"
+        android:name="com.bennysamuel.quizonchennai.Fragments.HomeScreenFragment"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_from_home_screen_to_quest_1"
+            app:destination="@id/questionOneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionOneFragment"
+        android:name="com.bennysamuel.quizonchennai.Fragments.QuestionOneFragment"
+        android:label="fragment_question_one"
+        tools:layout="@layout/fragment_question_one" >
+        <action
+            android:id="@+id/action_from_quest1_to_home_screen"
+            app:destination="@id/homeScreenFragment" />
+        <action
+            android:id="@+id/action_from_quest1_to_quest2"
+            app:destination="@id/questionaTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionaTwoFragment"
+        android:name="com.bennysamuel.quizonchennai.Fragments.QuestionaTwoFragment"
+        android:label="fragment_questiona_two"
+        tools:layout="@layout/fragment_questiona_two" >
+        <action
+            android:id="@+id/action_from_quest2_to_quest1"
+            app:destination="@id/questionOneFragment" />
+        <action
+            android:id="@+id/action_from_quest2_to_quest3"
+            app:destination="@id/questionThreeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questionThreeFragment"
+        android:name="com.bennysamuel.quizonchennai.Fragments.QuestionThreeFragment"
+        android:label="fragment_question_three"
+        tools:layout="@layout/fragment_question_three" >
+        <action
+            android:id="@+id/action_from_quest3_to_quest2"
+            app:destination="@id/questionaTwoFragment" />
+        <action
+            android:id="@+id/action_questionThreeFragment_to_scoreFragment"
+            app:destination="@id/scoreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scoreFragment"
+        android:name="com.bennysamuel.quizonchennai.Fragments.ScoreFragment"
+        android:label="fragment_score"
+        tools:layout="@layout/fragment_score" >
+        <action
+            android:id="@+id/action_scoreFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+    </fragment>
+</navigation>

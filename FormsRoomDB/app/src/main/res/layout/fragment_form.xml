@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".fragments.FormFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#93F3EA">
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Name"
+            android:padding="10sp"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/editText5"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="40dp"
+            android:layout_marginRight="40sp"
+            android:layout_marginLeft="40sp"
+            />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Email"
+            android:padding="10sp"
+            android:textSize="20sp"
+            android:layout_marginRight="40sp"
+            android:layout_marginLeft="40sp"
+            app:layout_constraintBottom_toTopOf="@+id/editText7"
+            app:layout_constraintTop_toBottomOf="@+id/editText6"
+            tools:layout_editor_absoluteX="40dp" />
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginRight="40sp"
+            android:layout_marginLeft="40sp"
+            android:hint="Gender"
+            android:padding="10sp"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/editText8"
+            app:layout_constraintTop_toBottomOf="@+id/editText5"
+            tools:layout_editor_absoluteX="40dp" />
+
+        <EditText
+            android:id="@+id/editText8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginRight="40sp"
+            android:layout_marginLeft="40sp"
+            android:hint="Age"
+            android:inputType="number"
+            android:padding="10sp"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/editText7"
+            tools:layout_editor_absoluteX="40dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText8" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

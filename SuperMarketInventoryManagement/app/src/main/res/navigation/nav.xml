@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/homeScreenFragment">
+
+    <fragment
+        android:id="@+id/homeScreenFragment"
+        android:name="com.bennysamuel.supermarketinventorymanagement.Fragments.HomeScreenFragment"
+        android:label="fragment_home_screen"
+        tools:layout="@layout/fragment_home_screen" >
+        <action
+            android:id="@+id/action_homeScreenFragment_to_itemsFragment"
+            app:destination="@id/itemsFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity2"
+        android:name="com.bennysamuel.supermarketinventorymanagement.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/itemsFragment"
+        android:name="com.bennysamuel.supermarketinventorymanagement.Fragments.ItemsFragment"
+        android:label="fragment_items"
+        tools:layout="@layout/fragment_items" >
+        <action
+            android:id="@+id/action_itemsFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+        <action
+            android:id="@+id/action_itemsFragment_to_chipsFragment"
+            app:destination="@id/chipsFragment" />
+        <action
+            android:id="@+id/action_itemsFragment_to_ramenFragment"
+            app:destination="@id/ramenFragment" />
+        <action
+            android:id="@+id/action_itemsFragment_to_sodaFragment"
+            app:destination="@id/sodaFragment" />
+        <action
+            android:id="@+id/action_itemsFragment_to_chocolateFragment"
+            app:destination="@id/chocolateFragment" />
+        <action
+            android:id="@+id/action_itemsFragment_to_milkFragment"
+            app:destination="@id/milkFragment" />
+        <action
+            android:id="@+id/action_itemsFragment_to_cheeseFragment"
+            app:destination="@id/cheeseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chipsFragment"
+        android:name="com.bennysamuel.supermarketinventorymanagement.Fragments.ChipsFragment"
+        android:label="fragment_chips"
+        tools:layout="@layout/fragment_chips" >
+        <action
+            android:id="@+id/action_chipsFragment_to_itemsFragment"
+            app:destination="@id/itemsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chocolateFragment"
+        android:name="com.bennysamuel.supermarketinventorymanagement.Fragments.ChocolateFragment"
+        android:label="fragment_chocolate"
+        tools:layout="@layout/fragment_chocolate" >
+        <action
+            android:id="@+id/action_chocolateFragment_to_itemsFragment"
+            app:destination="@id/itemsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sodaFragment"
+        android:name="com.bennysamuel.supermarketinventorymanagement.Fragments.SodaFragment"
+        android:label="fragment_soda"
+        tools:layout="@layout/fragment_soda" >
+        <action
+            android:id="@+id/action_sodaFragment_to_itemsFragment"
+            app:destination="@id/itemsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cheeseFragment"
+        android:name="com.bennysamuel.supermarketinventorymanagement.Fragments.CheeseFragment"
+        android:label="fragment_cheese"
+        tools:layout="@layout/fragment_cheese" >
+        <action
+            android:id="@+id/action_cheeseFragment_to_itemsFragment"
+            app:destination="@id/itemsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/milkFragment"
+        android:name="com.bennysamuel.supermarketinventorymanagement.Fragments.MilkFragment"
+        android:label="fragment_milk"
+        tools:layout="@layout/fragment_milk" >
+        <action
+            android:id="@+id/action_milkFragment_to_itemsFragment"
+            app:destination="@id/itemsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ramenFragment"
+        android:name="com.bennysamuel.supermarketinventorymanagement.Fragments.RamenFragment"
+        android:label="fragment_ramen"
+        tools:layout="@layout/fragment_ramen" >
+        <action
+            android:id="@+id/action_ramenFragment_to_itemsFragment"
+            app:destination="@id/itemsFragment" />
+    </fragment>
+</navigation>

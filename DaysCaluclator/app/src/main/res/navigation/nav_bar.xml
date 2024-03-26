@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_bar"
+    app:startDestination="@id/selectDateFragment">
+
+    <fragment
+        android:id="@+id/selectDateFragment"
+        android:name="com.bennysamuel.dayscaluclator.SelectDateFragment"
+        android:label="fragment_select_date"
+        tools:layout="@layout/fragment_select_date" >
+        <action
+            android:id="@+id/action_to_output_fragment"
+            app:destination="@id/outputFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/outputFragment"
+        android:name="com.bennysamuel.dayscaluclator.OutputFragment"
+        android:label="fragment_output"
+        tools:layout="@layout/fragment_output" >
+        <action
+            android:id="@+id/action_back_to_select_date_fragment"
+            app:destination="@id/selectDateFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "182601927957",
+    "project_id": "canvas-test-3c388",
+    "storage_bucket": "canvas-test-3c388.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182601927957:android:e76967029d8d64abe42d1c",
+        "android_client_info": {
+          "package_name": "com.bennysamuel.canvastest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACrPcUruilArUdIs-6IOHRVGJ-4LBP5RU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

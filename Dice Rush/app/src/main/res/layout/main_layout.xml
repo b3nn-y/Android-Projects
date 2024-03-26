@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="#A3EFEF"
+    android:gravity="center"
+
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DICE RUSH!"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="25sp"
+
+
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number to guess is: "
+        android:layout_marginBottom="10sp"
+        android:id="@+id/guessText"
+        android:textSize="20sp"
+
+        />
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_marginBottom="20sp"
+        android:src="@drawable/dice1"
+        android:id="@+id/image"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(0)"
+        android:layout_marginBottom="10sp"
+        android:textSize="20sp"
+        android:id="@+id/sum"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roll the dice"
+        android:layout_gravity="center_horizontal"
+        android:background="#50EDF4"
+        android:padding="15sp"
+        android:id="@+id/button"
+        />
+
+
+
+</LinearLayout>
+
